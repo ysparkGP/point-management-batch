@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-21T03:40:49" hostname="DESKTOP-TQ29OS4" time="0.184">
+  <properties/>
+  <testcase name="messageExpiredPointJob()" classname="com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest" time="0.184"/>
+  <system-out><![CDATA[2022-03-21 12:40:49.176  INFO 13592 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest], using SpringBootContextLoader
+2022-03-21 12:40:49.176  INFO 13592 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-21 12:40:49.176  INFO 13592 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest]: MessageExpiredPointJobConfigurationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-21 12:40:49.186  INFO 13592 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yusung.pointManage.PointManagementApplication for test class com.yusung.pointManage.job.message.MessageExpiredPointJobConfigurationTest
+2022-03-21 12:40:49.190  INFO 13592 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+2022-03-21 12:40:49.190  INFO 13592 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d379439, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@30390e06, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@52ab5e21, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@579c91d6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@469b4140, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3eaa3eab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36783509, org.springframework.test.context.event.EventPublishingTestExecutionListener@5591031, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1954d09b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7664ea7c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c349c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4c560955, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7339d84c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@225ffb5d]
+Hibernate: insert into point_wallet (id, amount, user_id) values (null, ?, ?)
+Hibernate: insert into point_wallet (id, amount, user_id) values (null, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into point (id, amount, earned_date, expire_date, is_expired, point_wallet_id, is_used) values (null, ?, ?, ?, ?, ?, ?)
+2022-03-21 12:40:49.211  INFO 13592 --- [    Test worker] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=messageExpiredPointJob]] launched with the following parameters: [{today=2022-05-06}]
+2022-03-21 12:40:49.217  WARN 13592 --- [    Test worker] o.s.b.c.l.AbstractListenerFactoryBean    : org.springframework.batch.item.ItemProcessor is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2022-03-21 12:40:49.220  INFO 13592 --- [    Test worker] o.s.batch.core.job.SimpleStepHandler     : Executing step: [MessageExpiredPointStep]
+Hibernate: select pointwalle1_.user_id as col_0_0_, coalesce(sum(point0_.amount), ?) as col_1_0_ from point point0_ cross join point_wallet pointwalle1_ where point0_.point_wallet_id=pointwalle1_.id and point0_.is_expired=? and point0_.is_used=? and point0_.expire_date=? group by point0_.point_wallet_id order by point0_.point_wallet_id asc limit ?
+Hibernate: select count(distinct point0_.point_wallet_id) as col_0_0_ from point point0_ cross join point_wallet pointwalle1_ where point0_.point_wallet_id=pointwalle1_.id and point0_.is_expired=? and point0_.is_used=? and point0_.expire_date=?
+Hibernate: select pointwalle1_.user_id as col_0_0_, coalesce(sum(point0_.amount), ?) as col_1_0_ from point point0_ cross join point_wallet pointwalle1_ where point0_.point_wallet_id=pointwalle1_.id and point0_.is_expired=? and point0_.is_used=? and point0_.expire_date=? group by point0_.point_wallet_id order by point0_.point_wallet_id asc limit ? offset ?
+Hibernate: select count(distinct point0_.point_wallet_id) as col_0_0_ from point point0_ cross join point_wallet pointwalle1_ where point0_.point_wallet_id=pointwalle1_.id and point0_.is_expired=? and point0_.is_used=? and point0_.expire_date=?
+Hibernate: insert into message (id, content, title, user_id) values (null, ?, ?, ?)
+Hibernate: insert into message (id, content, title, user_id) values (null, ?, ?, ?)
+2022-03-21 12:40:49.352  INFO 13592 --- [    Test worker] o.s.batch.core.step.AbstractStep         : Step: [MessageExpiredPointStep] executed in 132ms
+2022-03-21 12:40:49.356  INFO 13592 --- [    Test worker] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=messageExpiredPointJob]] completed with the following parameters: [{today=2022-05-06}] and the following status: [COMPLETED] in 144ms
+Hibernate: select message0_.id as id1_0_, message0_.content as content2_0_, message0_.title as title3_0_, message0_.user_id as user_id4_0_ from message message0_
+Hibernate: select point0_.id as id1_1_, point0_.amount as amount2_1_, point0_.earned_date as earned_d3_1_, point0_.expire_date as expire_d4_1_, point0_.is_expired as is_expir5_1_, point0_.point_wallet_id as point_wa7_1_, point0_.is_used as is_used6_1_ from point point0_
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: delete from point where id=?
+Hibernate: select pointreser0_.id as id1_2_, pointreser0_.amount as amount2_2_, pointreser0_.available_days as availabl3_2_, pointreser0_.earned_date as earned_d4_2_, pointreser0_.is_executed as is_execu5_2_, pointreser0_.point_wallet_id as point_wa6_2_ from point_reservation pointreser0_
+Hibernate: select pointwalle0_.id as id1_3_, pointwalle0_.amount as amount2_3_, pointwalle0_.user_id as user_id3_3_ from point_wallet pointwalle0_
+Hibernate: delete from point_wallet where id=?
+Hibernate: delete from point_wallet where id=?
+Hibernate: select message0_.id as id1_0_, message0_.content as content2_0_, message0_.title as title3_0_, message0_.user_id as user_id4_0_ from message message0_
+Hibernate: delete from message where id=?
+Hibernate: delete from message where id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
